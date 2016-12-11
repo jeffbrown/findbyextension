@@ -1,0 +1,3 @@
+moduleName = book-module
+moduleVersion = 1.0
+staticExtensionClasses = demo.BookExtension
