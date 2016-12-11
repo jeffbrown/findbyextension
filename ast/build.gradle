@@ -1,0 +1,10 @@
+apply plugin: 'groovy'
+
+repositories {
+    mavenLocal()
+    maven { url "https://repo.grails.org/grails/core" }
+}
+
+dependencies {
+    compile 'org.grails:grails-plugin-domain-class:3.2.3'
+}
