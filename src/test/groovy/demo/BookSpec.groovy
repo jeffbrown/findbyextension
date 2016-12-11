@@ -18,6 +18,7 @@ class BookSpec extends Specification {
         book.title == 'Pragmatic Programmer'
         book.author == 'Andy Hunt'
         book.pages == 320
+        Book.count() == 1
 
         when:
         book = Book.findOrSaveWhere(title: 'Kotlin In Action', [author: 'Kotlin Ken', pages: 350])
@@ -27,5 +28,6 @@ class BookSpec extends Specification {
         book.title == 'Kotlin In Action'
         book.author == 'Kotlin Ken'
         book.pages == 350
+        Book.count() == 2
     }
 }
